@@ -63,7 +63,7 @@ Replace `DB_USER` and `DB_PASSWORD` with your local MySQL credentials. Adjust th
 Create a file named `.env` inside `frontend/`:
 
 ```dotenv
-VITE_API_URL=http://localhost:3000
+VITE_API_URL=http://localhost:3000/api
 ```
 
 This is the backend's base URL. Do not add a trailing slash or `/bicycles`, because the frontend appends endpoint paths itself. If you change the backend port, update this URL as well. Restart the relevant development server after changing an environment file.
@@ -91,7 +91,7 @@ cd backend
 npm run dev
 ```
 
-With the configuration above, the API runs at [http://localhost:3000](http://localhost:3000), and the bicycle endpoint is [http://localhost:3000/bicycles](http://localhost:3000/bicycles).
+With the configuration above, the API runs at [http://localhost:3000/api](http://localhost:3000/api), and the bicycle endpoint is [http://localhost:3000/api/bicycles](http://localhost:3000/api/bicycles).
 
 In the second terminal, start the frontend:
 

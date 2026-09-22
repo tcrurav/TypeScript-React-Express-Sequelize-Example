@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.use("/", apiRouter);
+app.use("/api", apiRouter);
 
 app.use(notFoundMiddleware);
 
